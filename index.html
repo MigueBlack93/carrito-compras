@@ -4,57 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito de Compras</title>
+    <title>Carrito de Compras de Gráfica Everest</title>
     <meta name="author" content="Miguel Angel Ulmi">
     <meta name="keywords" content="carrito, carrito de compras, compras, shopping, shopping cart, cart">
     <meta name="resume" content="Es una página carrito de compras hecha para el trabajo final intgrador de Talento Tech">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/Icon.png">
 </head>
 
 <body>
-    <header>
-        <h1>Bienvenido al Carrito de Compras</h1>
+    <header class="header">
+        <h1 class="header__titulo">Bienvenido a Gráfica Everest</h1>
 
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Productos</li>
-                <li>Reseñas</li>
-                <li>Contacto</li>
+        <nav class="header__nav">
+            <ul class="header__nav_list">
+                <li class="header__nav__list__item" onclick=".main">Home</li>
+                <li class="header__nav__list__item" onclick=".">Productos</li>
+                <li class="header__nav__list__item">Reseñas</li>
+                <li class="header__nav__list__item">Contacto</li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="main">
         <section class="home">
-            <h2>¡El mejor packaging de Argentina para el mundo!</h2>
-            <p>Más de 20 años de experiencia como fabricantes del mejor packaging de Argentina nos permiten ofrecer todo lo que necesitás para distinguir tu producto. <br>
+            <h2 class="home_titulo">¡El mejor packaging de Argentina para el mundo!</h2>
+            <p class="home__descripcion">Más de 20 años de experiencia como fabricantes del mejor packaging de Argentina nos permiten ofrecer todo lo que necesitás para distinguir tu producto. <br>
                 Ofrecemos medidas estándar y especiales, impresiones, terminaciones especiales, varios tipos de cartulina y más!<br>
                 <span>¡Precios especiales al por mayor!<br> 
                 ¡Todo para sublimación!</span></p>
         </section>
 
         <section class="productos">
-            <h2>Productos Destacados</h2>
-            <div>
-
+            <h2 class="productos__titulo">Productos Destacados</h2>
+            <div class="productos__caja">
+                <img src="images/Len1.png" alt="Lentes 3D">
+                <p class="productos__caja__descripcion">Lentes 3D</p>
+            </div>
+            <div class="productos__caja">
+                <img src="images/Per9.png" alt="Caja para perfume 9">
+                <p class="productos__caja__descripcion">Caja para Perfume 9</p>
+            </div>
+            <div class="productos__caja">
+                <img src="images/Ban2.png" alt="Bandeja para papas 2">
+                <p class="productos__caja__descripcion">Bandeja para papas 2</p>
             </div>
         </section>
 
         <section class="resenas">
-            <h2>Comentarios destacados de nuestros clientes:</h2>
-            <h3></h3>
-            <p></p>
+            <h2 class="resenas__titulo">Comentarios destacados de nuestros clientes:</h2>
+            <h3 class="resenas__titulo__item"></h3>
+            <p class="resenas__titulo__descripcion"></p>
         </section>
 
         <section class="contacto">
+            <form action="post" name="formspree.io">
+                <label for="">Ingrese su nombre y apellido:</label>
+                <input type="text" placeholder="Nombre y Apellido">
 
+                <label for="">Digite su email</label>
+                <input type="email" placeholder="ejemplo@ejemplo.com">
+
+                <label for="">Ingrese brevemente el motivo de su consulta</label>
+                <textarea name="" id="" placeholder="Ingrese aquí su consulta:"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
 
-    <footer>
-        <a href="https://github.com/MigueBlack93" target="_blank">Desarrollado por Miguel Ulmi</a>
+    <footer class="footer">
+        <a href="https://github.com/MigueBlack93" target="_blank" class="footer__descripcion">Desarrollado por Miguel Ulmi</a>
     </footer>
 
     <script src="app/app.js"></script>
