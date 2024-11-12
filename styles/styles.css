@@ -140,6 +140,21 @@ span{
 
 #resenas{
     display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+    gap: 15px;
+}
+
+.resenas__titulo{
+    text-align: center;
+}
+
+.resenas__items{
+
 }
 
 
