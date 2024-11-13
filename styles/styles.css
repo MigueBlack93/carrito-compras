@@ -16,7 +16,6 @@
 
 body{
     background-color: var(--color-fondo);
-    padding-top: 100px;
 }
 
 .header{
@@ -28,7 +27,6 @@ body{
     height: 100px;
     width: 100%;
     top: 0;
-    position: fixed;
 }
 
 .header__logo{
@@ -184,6 +182,33 @@ span{
     gap: 15px;
     font-family: var(--fuente-textos-descripcion);
     font-weight: var(--peso-fuente-subtitulos);
+    font-size: 1.1rem;
+}
+
+.contacto__formulario__nombre{
+
+}
+
+.contacto__formulario__email{
+
+}
+
+.contacto__formulario__consulta{
+
+}
+
+.contacto__formulario__enviar{
+    width: 280px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: var(--color-fondo-resenas);
+    border: none;
+    color: var(--color-fondo);
+    font-size: 1.25rem;
+}
+
+.contacto__formulario__enviar:hover{
+    background-color: var(--color-fondo-footer);
 }
 
 .footer{
