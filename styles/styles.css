@@ -175,7 +175,7 @@ span{
 }
 
 #contacto{
-    height: 700px;
+    height: 740px;
     padding: 40px 0px 40px 0px;
     background-color: #FFFFFF;
     font-family: var(--fuente-textos-titulo);
@@ -197,6 +197,7 @@ span{
 }
 
 .contacto__formulario__inputs{
+    padding: 10px;
     border: none;
     border-radius: 8px;
     background-color: var(--color-fondo-resenas);
