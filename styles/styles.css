@@ -181,13 +181,15 @@ span{
 
 .contacto__formulario{
     padding: 20px;
-    height: 450px;
+    height: 600px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 15px;
     font-family: var(--fuente-textos-descripcion);
     font-weight: var(--peso-fuente-subtitulos);
     font-size: 1.1rem;
+    text-align: center;
 }
 
 .contacto__formulario__nombre{
@@ -204,7 +206,7 @@ span{
 
 .contacto__formulario__enviar{
     width: 280px;
-    height: 60px;
+    height: 50px;
     border-radius: 10px;
     background-color: var(--color-fondo-resenas);
     box-shadow: 0px 0px 5px var(--color-sombras);
@@ -219,6 +221,7 @@ span{
 }
 
 .footer{
+    margin-top: 130px;
     height: 80px;
     display: flex;
     background-color: var(--color-fondo-header);
