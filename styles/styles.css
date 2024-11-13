@@ -3,7 +3,7 @@
 :root{
     --color-fondo: #FCEADE;
     --color-texto: #000000;
-    --color-fondo-header: #ff895bda;
+    --color-fondo-header: #ff8c5f;
     --color-fondo-footer: #25CED1;
     --color-fondo-resenas: #EA526F;
 
@@ -16,6 +16,7 @@
 
 body{
     background-color: var(--color-fondo);
+    padding-top: 100px;
 }
 
 .header{
@@ -24,8 +25,10 @@ body{
     color: var(--color-texto);
     align-items: center;
     justify-content: space-around;
-    height: 15vh;
-    
+    height: 100px;
+    width: 100%;
+    top: 0;
+    position: fixed;
 }
 
 .header__logo{
@@ -61,13 +64,17 @@ body{
     color: var(--color-texto);
 }
 
+.header__nav__list__item:hover{
+    color: var(--color-fondo-footer);
+}
+
 .main{
     display: flex;
     flex-direction: column;
 }
 
 #home{
-    padding: 50px 0px 50px 0px;
+    padding: 40px 0px 50px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -140,27 +147,61 @@ span{
 
 #resenas{
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    justify-content: space-around;
-    align-content: space-around;
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
+    grid-template-rows: 15px, repeat(auto-fill, minmax(400px, 600px));
+    margin: 20px;
+    gap: 10px;
+    font-family: var(--fuente-textos-titulo);
+    color: var(--color-fondo);
 }
 
 .resenas__titulo{
+    background-color: var(--color-fondo-resenas);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-radius: 16px;
     text-align: center;
 }
 
-.resenas__items{
 
+.resenas__items{
+    background-color: var(--color-fondo-resenas);
+    padding: 10px;
+    border-radius: 16px;
+    text-align: center;
 }
 
 #contacto{
     height: 50vh;
-    display: flex;
-    flex-direction: column;
+    margin: 40px 0px 50px 0px;
 }
 
+.contacto__formulario{
+    padding: 20px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: var(--fuente-textos-descripcion);
+    font-weight: var(--peso-fuente-subtitulos);
+}
 
+.footer{
+    height: 80px;
+    display: flex;
+    background-color: var(--color-fondo-header);
+    font-family: var(--fuente-textos-titulo);
+    font-weight: var(--peso-fuente-titulos);
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__descripcion{
+    text-decoration: none;
+    color: var(--color-texto);
+}
+
+.footer__descripcion:hover{
+    color: var(--color-fondo-footer);
+}
