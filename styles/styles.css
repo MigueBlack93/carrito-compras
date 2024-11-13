@@ -6,6 +6,7 @@
     --color-fondo-header: #ff8c5f;
     --color-fondo-footer: #25CED1;
     --color-fondo-resenas: #EA526F;
+    --color-sombras: #505050;
 
     --fuente-textos-titulo: "Cabin", sans-serif;
     --fuente-textos-descripcion: "Inter", sans-serif;
@@ -101,7 +102,7 @@ span{
 }
 
 #productos{
-    padding: 50px 0px 50px 0px;
+    padding: 50px 0px 70px 0px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -147,31 +148,35 @@ span{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
     grid-template-rows: 15px, repeat(auto-fill, minmax(400px, 600px));
-    margin: 20px;
-    gap: 10px;
+    background-color: var(--color-fondo-resenas);
+    padding: 80px 40px 80px 40px;
+    gap: 20px;
     font-family: var(--fuente-textos-titulo);
-    color: var(--color-fondo);
+    color: var(--color-fondo-resenas);
 }
 
 .resenas__titulo{
-    background-color: var(--color-fondo-resenas);
+    background-color: #FFFFFF;
     grid-column-start: 1;
     grid-column-end: 4;
     border-radius: 16px;
     text-align: center;
+    box-shadow: 0px 0px 6px var(--color-sombras);
 }
 
 
 .resenas__items{
-    background-color: var(--color-fondo-resenas);
+    background-color: #FFFFFF;
     padding: 10px;
     border-radius: 16px;
     text-align: center;
+    box-shadow: 0px 0px 6px var(--color-sombras);
 }
 
 #contacto{
     height: 50vh;
-    margin: 40px 0px 50px 0px;
+    padding: 40px 0px 50px 0px;
+
 }
 
 .contacto__formulario{
@@ -202,6 +207,7 @@ span{
     height: 60px;
     border-radius: 10px;
     background-color: var(--color-fondo-resenas);
+    box-shadow: 0px 0px 5px var(--color-sombras);
     border: none;
     color: var(--color-fondo);
     font-size: 1.25rem;
@@ -209,6 +215,7 @@ span{
 
 .contacto__formulario__enviar:hover{
     background-color: var(--color-fondo-footer);
+
 }
 
 .footer{
