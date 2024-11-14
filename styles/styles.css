@@ -105,6 +105,7 @@ span{
 
 #productos{
     padding: 50px 0px 70px 0px;
+    background: radial-gradient(#FFFFFF, #ffe5d4);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -114,6 +115,7 @@ span{
     font-family: var(--fuente-textos-descripcion);
     font-weight: var(--peso-fuente-titulos);
     margin-bottom: 40px;
+    font-size: 1.5rem;
 }
 
 .productos__items{
@@ -145,6 +147,20 @@ span{
     width: 24vw;
     height: 24vw;
     object-fit:scale-down;
+}
+
+.productos__armado{
+    padding: 50px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.productos__armado__video{
+    width: 48vw;
+    box-shadow: 0px 0px 15px 8px var(--color-fondo-footer);
+    border-radius: 16px;
 }
 
 #resenas{
@@ -180,6 +196,9 @@ span{
     height: 740px;
     padding: 40px 0px 40px 0px;
     background-color: #FFFFFF;
+    background-image: url("/images/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: var(--fuente-textos-titulo);
     font-weight: var(--peso-fuente-subtitulos);
     font-size: 1.1rem;
@@ -204,6 +223,7 @@ span{
     border-radius: 8px;
     background-color: var(--color-fondo-resenas);
     color: #FFFFFF;
+    box-shadow: 0px 0px 10px 5px var(--color-sombras);
     resize: none;
 }
 
@@ -219,7 +239,7 @@ span{
     height: 50px;
     border-radius: 10px;
     background-color: var(--color-fondo-resenas);
-    box-shadow: 0px 0px 5px var(--color-sombras);
+    box-shadow: 0px 0px 10px 5px var(--color-sombras);
     border: none;
     color: var(--color-fondo);
     font-size: 1.25rem;
@@ -270,6 +290,10 @@ span{
 
     .header__nav__list{
         font-size: 1.25rem;
+    }
+
+    .productos__armado__video{
+        width: 70vw;
     }
 
     .contacto__formulario__inputs{
