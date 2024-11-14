@@ -77,14 +77,15 @@
 
         <section id="contacto">
             <h2>Contactanos:</h2>
-            <form action="post" name="formspree.io" class="contacto__formulario">
-                <label for="">Ingrese su nombre y apellido: <br> <br> <input type="text" placeholder="Juan Jose Ejemplo" size="30" class="contacto__formulario__inputs"></label>
+            <form   action="https://formspree.io/f/xanyjayg"
+            method="POST" name="contacto_grafica_everest" class="contacto__formulario">
+                <label for="nombre_y_apellido">Ingrese su nombre y apellido: <br> <br> <input name="Nombre y Apellido" type="text" placeholder="Juan Jose Ejemplo" size="30" class="contacto__formulario__inputs"></label>
                 
 
-                <label for="">Digite su email: <br> <br> <input type="email" placeholder="ejemplo@ejemplo.com" size="30" class="contacto__formulario__inputs"></label>
+                <label for="email">Digite su email: <br> <br> <input name="Email" type="email" placeholder="ejemplo@ejemplo.com" size="30" class="contacto__formulario__inputs"></label>
                 
 
-                <label for="">Ingrese brevemente el motivo de su consulta: <br> <br> <textarea name="" id="" placeholder="Ingrese aquí su consulta:" rows="15" cols="70" class="contacto__formulario__inputs"></textarea></label>
+                <label for="consulta">Ingrese brevemente el motivo de su consulta: <br> <br> <textarea name="Consulta" id="consulta" placeholder="Ingrese aquí su consulta:" rows="15" cols="70" class="contacto__formulario__inputs"></textarea></label>
                 
 
                 <button type="submit" class="contacto__formulario__enviar">Enviar</button>
