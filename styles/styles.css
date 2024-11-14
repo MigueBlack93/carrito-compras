@@ -196,7 +196,7 @@ span{
     height: 740px;
     padding: 40px 0px 40px 0px;
     background-color: #FFFFFF;
-    background-image: url("/images/fondo.jpg");
+    background-image: url("/images/fondo.png");
     background-size: cover;
     background-repeat: no-repeat;
     font-family: var(--fuente-textos-titulo);
@@ -223,7 +223,6 @@ span{
     border-radius: 8px;
     background-color: var(--color-fondo-resenas);
     color: #FFFFFF;
-    box-shadow: 0px 0px 10px 5px var(--color-sombras);
     resize: none;
 }
 
@@ -239,7 +238,7 @@ span{
     height: 50px;
     border-radius: 10px;
     background-color: var(--color-fondo-resenas);
-    box-shadow: 0px 0px 10px 5px var(--color-sombras);
+    box-shadow: 0px 0px 10px 2px var(--color-sombras);
     border: none;
     color: var(--color-fondo);
     font-size: 1.25rem;
