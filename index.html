@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras de Gráfica Everest</title>
+    <meta name="author" content="Miguel Angel Ulmi">
+    <meta name="keywords" content="carrito, carrito de compras, compras, shopping, shopping cart, cart">
+    <meta name="resume" content="Es una página carrito de compras hecha para el trabajo final intgrador de Talento Tech">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/Icon.png">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="images/Icon.png" alt="Logo Gráfica Everest" class="header__logo__imagen">
+            <h1 class="header__titulo">Bienvenido a Gráfica Everest</h1>
+        </div>
+
+        <nav class="header__nav">
+            <ul class="header__nav__list">
+                <li><a href="#home" class="header__nav__list__item">Home</a></li>
+                <li><a href="#productos" class="header__nav__list__item">Productos</a></li>
+                <li><a href="#resenas" class="header__nav__list__item">Reseñas</a></li>
+                <li><a href="#contacto" class="header__nav__list__item">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section id="home">
+            <h2 class="home__titulo">¡El mejor packaging de Argentina para el mundo!</h2>
+            <p class="home__descripcion">Más de 20 años de experiencia como fabricantes del mejor packaging de Argentina nos permiten ofrecer todo lo que necesitás para distinguir tu producto. <br>
+                Ofrecemos medidas estándar y especiales, impresiones, terminaciones especiales, varios tipos de cartulina y más!<br>
+                <span>¡Precios especiales al por mayor!<br> 
+                ¡Todo para sublimación!</span></p>
+        </section>
+
+        <section id="productos">
+            <h2 class="productos__titulo">Productos Destacados</h2>
+            <div class="productos__items">
+                <div class="productos__caja">
+                    <p class="productos__caja__titulo">Lentes 3D</p>
+                    <img src="images/Len1.png" alt="Lentes 3D" class="productos__imagen">
+                </div>
+                <div class="productos__caja">
+                    <p class="productos__caja__titulo">Caja para Perfume 9</p>
+                    <img src="images/Per9.png" alt="Caja para perfume 9" class="productos__imagen">
+                </div>
+                <div class="productos__caja">
+                    <p class="productos__caja__titulo">Bandeja para papas 2</p>
+                    <img src="images/Ban2.png" alt="Bandeja para papas 2" class="productos__imagen">
+                </div>
+            </div>
+        </section>
+
+        <section id="resenas">
+                <div class="resenas__titulo">
+                    <h2>Comentarios destacados de nuestros clientes:</h2>
+                </div>
+                <div class="resenas__items">
+                    <h3 class="resenas__titulo__item">Almacén 1937</h3>
+                    <p class="resenas__titulo__descripcion">Hermosas cajas, justo lo que estaba necesitando<br>¡¡¡EXCELENTES!!!</p>
+                </div>
+                <div class="resenas__items">
+                    <h3 class="resenas__titulo__item">Alfajores Los Pagos</h3>
+                    <p class="resenas__titulo__descripcion">Precios económicos, materiales de primera y responsabilidad.<br>¡Sin duda volveré a elegirlos!</p>
+                </div>
+                <div class="resenas__items">
+                    <h3 class="resenas__titulo__item">Perfumes Josefina</h3>
+                    <p class="resenas__titulo__descripcion">Atención de primera y calidad únicamente para nuestros productos de exportación<br>¡Gracias Gráfica Everest!</p>
+                </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contactanos:</h2>
+            <form   action="https://formspree.io/f/xanyjayg"
+            method="POST" name="contacto_grafica_everest" class="contacto__formulario">
+                <label for="nombre_y_apellido">Ingrese su nombre y apellido: <br> <br> <input name="Nombre y Apellido" type="text" placeholder="Juan Jose Ejemplo" size="30" class="contacto__formulario__inputs" required></label>
+                
+
+                <label for="email">Digite su email: <br> <br> <input name="Email" type="email" placeholder="ejemplo@ejemplo.com" size="30" class="contacto__formulario__inputs" required></label>
+                
+
+                <label for="consulta">Explique brevemente el motivo de su consulta: <br> <br> <textarea name="Consulta" id="consulta" placeholder="Ingrese aquí su consulta:" rows="15" cols="70" class="contacto__formulario__inputs" required></textarea></label>
+                
+
+                <button type="submit" class="contacto__formulario__enviar">Enviar</button>
+            </form>
+            <!--<div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+                var setting = {"query":"Madrid 3214, Isidro Casanova, Provincia de Buenos Aires, Argentina","width":800,"height":600,"satellite":false,"zoom":13,"placeId":"ChIJMYZ7r23GvJUR99tNs8wPkfY","cid":"0xf6910fccb34ddbf7","coords":[-34.70249549999999,-58.5806013],"cityUrl":"/argentina/buenos-aires","cityAnchorText":"Map of Buenos Aires, Buenos Aires, Argentina","lang":"es-es","queryString":"Madrid 3214, Isidro Casanova, Provincia de Buenos Aires, Argentina","centerCoord":[-34.70249549999999,-58.5806013],"id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"1169615"};
+                var d = document;
+                var s = d.createElement('script');
+                s.src = 'https://1map.com/js/script-for-user.js?embed_id=1169615';
+                s.async = true;
+                s.onload = function (e) {
+                  window.OneMap.initMap(setting)
+                };
+                var to = d.getElementsByTagName('script')[0];
+                to.parentNode.insertBefore(s, to);
+              })();</script><a href="https://1map.com/es-es/map-embed">1 Map</a></div>-->
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="https://github.com/MigueBlack93" target="_blank" class="footer__descripcion">Desarrollado por Miguel Ulmi</a>
+    </footer>
+
+    <script src="app/app.js"></script>
+</body>
+</html>
