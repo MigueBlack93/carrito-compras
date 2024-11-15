@@ -84,6 +84,7 @@ body{
 .home__titulo{
     font-family: var(--fuente-textos-titulo);
     font-weight: var(--peso-fuente-titulos);
+    text-align: center;
     font-size: 2rem;
 }
 
@@ -104,6 +105,7 @@ span{
 
 #productos{
     padding: 50px 0px 70px 0px;
+    background: radial-gradient(#FFFFFF, #ffe5d4);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -113,6 +115,7 @@ span{
     font-family: var(--fuente-textos-descripcion);
     font-weight: var(--peso-fuente-titulos);
     margin-bottom: 40px;
+    font-size: 1.5rem;
 }
 
 .productos__items{
@@ -122,6 +125,7 @@ span{
 
 .productos__caja{
     width: 30vw;
+    min-height: 220px;
     height: fit-content;
     padding-bottom: 10px;
     display: flex;
@@ -145,12 +149,26 @@ span{
     object-fit:scale-down;
 }
 
+.productos__armado{
+    padding: 50px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.productos__armado__video{
+    width: 48vw;
+    box-shadow: 0px 0px 15px 8px var(--color-fondo-footer);
+    border-radius: 16px;
+}
+
 #resenas{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
     grid-template-rows: 15px, repeat(auto-fill, minmax(400px, 600px));
     background-color: var(--color-fondo-resenas);
-    padding: 80px 40px 80px 40px;
+    padding: 80px 3vw 80px 3vw;
     gap: 20px;
     font-family: var(--fuente-textos-titulo);
     color: var(--color-fondo-resenas);
@@ -178,6 +196,9 @@ span{
     height: 740px;
     padding: 40px 0px 40px 0px;
     background-color: #FFFFFF;
+    background-image: url("/images/fondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: var(--fuente-textos-titulo);
     font-weight: var(--peso-fuente-subtitulos);
     font-size: 1.1rem;
@@ -217,7 +238,7 @@ span{
     height: 50px;
     border-radius: 10px;
     background-color: var(--color-fondo-resenas);
-    box-shadow: 0px 0px 5px var(--color-sombras);
+    box-shadow: 0px 0px 10px 2px var(--color-sombras);
     border: none;
     color: var(--color-fondo);
     font-size: 1.25rem;
@@ -246,4 +267,35 @@ span{
 
 .footer__descripcion:hover{
     color: var(--color-fondo-footer);
+}
+
+@media (max-width: 900px) {
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        gap: 0px;
+    }
+
+    .header__logo__imagen{
+        width: 50px;
+        height: 50px;
+    }
+
+    .header__titulo{
+        font-size: 1.8rem;
+    }
+
+    .header__nav__list{
+        font-size: 1.25rem;
+    }
+
+    .productos__armado__video{
+        width: 70vw;
+    }
+
+    .contacto__formulario__inputs{
+        max-width: 80vw;
+    }
 }
