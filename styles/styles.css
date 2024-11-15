@@ -196,7 +196,7 @@ span{
     height: 740px;
     padding: 40px 0px 40px 0px;
     background-color: #FFFFFF;
-    background-image: url("/images/fondo.png");
+    background-image: url("images/fondo.png");
     background-size: cover;
     background-repeat: no-repeat;
     font-family: var(--fuente-textos-titulo);
