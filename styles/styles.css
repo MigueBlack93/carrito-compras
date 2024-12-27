@@ -67,6 +67,10 @@ body{
     color: var(--color-fondo-footer);
 }
 
+.header__nav__list__item__imagen{
+    width: 25px;
+}
+
 .main{
     display: flex;
     flex-direction: column;
@@ -183,7 +187,8 @@ span{
 }
 
 #carrito{
-    
+    display: grid;
+
 }
 
 #resenas{
@@ -312,6 +317,7 @@ span{
 
     .header__nav__list{
         font-size: 1.25rem;
+        flex-wrap:wrap;
     }
 
     .productos__armado__video{
