@@ -199,9 +199,10 @@ span{
 }
 
 .carrito__total{
-    width: 20vw;
+    width: 30vw;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .carrito__total__botones{
@@ -211,11 +212,44 @@ span{
 }
 
 #carrito-boton-borrar{
-
+    width: 90px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: var(--color-sombras);    
+    font-family: var(--fuente-textos-descripcion);
+    font-weight: var(--peso-fuente-subtitulos);
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    border-style: none;
 }
 
+#carrito-boton-borrar:hover{
+    background-color: #25CED1;
+    cursor: pointer;
+}
+
+
 #carrito-boton-pagar{
-    
+    width: 90px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: var(--color-fondo-resenas);    
+    font-family: var(--fuente-textos-descripcion);
+    font-weight: var(--peso-fuente-subtitulos);
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    border-style: none;
+}
+
+#carrito-boton-pagar:hover{
+    background-color: #25CED1;
+    cursor: pointer;
 }
 
 #resenas{
