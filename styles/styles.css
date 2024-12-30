@@ -159,6 +159,7 @@ span{
     font-weight: var(--peso-fuente-subtitulos);
     color: #FFFFFF;
     font-size: 1.2rem;
+    border-style: none;
 }
 
 .productos__caja__boton:hover{
