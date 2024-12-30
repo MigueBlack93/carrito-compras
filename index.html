@@ -26,6 +26,7 @@
                 <li><a href="#productos" class="header__nav__list__item">Productos</a></li>
                 <li><a href="#resenas" class="header__nav__list__item">Reseñas</a></li>
                 <li><a href="#contacto" class="header__nav__list__item">Contacto</a></li>
+                <li><a href="#carrito" class="header__nav__list__item"><img src="images/shopping_cart.png" alt="Carrito de compras negro" class="header__nav__list__item__imagen"></a></li>
             </ul>
         </nav>
     </header>
@@ -45,20 +46,42 @@
                 <div class="productos__caja">
                     <p class="productos__caja__titulo">Lentes 3D</p>
                     <img src="images/Len1.png" alt="Lentes 3D" class="productos__imagen">
+                    <p class="productos__caja__titulo">Precio por unidad: $ 90,00</p>
+                    <button class="productos__caja__boton">Agregar al carrito</button>
                 </div>
                 <div class="productos__caja">
                     <p class="productos__caja__titulo">Caja para Perfume 9</p>
                     <img src="images/Per9.png" alt="Caja para perfume 9" class="productos__imagen">
+                    <p class="productos__caja__titulo">Precio por unidad: $ 450,00</p>
+                    <button class="productos__caja__boton">Agregar al carrito</button>
                 </div>
                 <div class="productos__caja">
-                    <p class="productos__caja__titulo">Bandeja para papas 2</p>
+                    <p class="productos__caja__titulo">Bandeja para Papas 2</p>
                     <img src="images/Ban2.png" alt="Bandeja para papas 2" class="productos__imagen">
+                    <p class="productos__caja__titulo">Precio por unidad: $ 150,00</p>
+                    <button class="productos__caja__boton">Agregar al carrito</button>
                 </div>
             </div>
 
             <div class="productos__armado">
                 <h3 class="productos__titulo">Armado de nuestras cajas</h3>
                 <video class="productos__armado__video" src="videos/Armado de Base Automática.mp4" muted controls autoplay>Armado de cajas</video>
+            </div>
+        </section>
+
+        <section id="carrito">
+            <h2 class="carrito__titulo">Total de Productos</h2>
+            <div id="contenedor-productos">
+                <ul id="carrito-lista">
+
+                </ul>
+            </div>
+            <div class="carrito__total">
+                <h3 id="carrito-total">Total a Pagar: $ 0,00</h3>
+                <div class="carrito__total__botones">
+                    <button id="carrito-boton-borrar">Borrar</button>
+                    <button id="carrito-boton-pagar">Pagar</button>
+                </div>
             </div>
         </section>
 
@@ -81,7 +104,6 @@
         </section>
 
         <section id="contacto">
-            <!--<img src="images/fondo.jpg" alt="Notebook con lentes" class="contacto__fondo">-->
             <h2>Contactanos:</h2>
             <form   action="https://formspree.io/f/xanyjayg"
             method="POST" name="contacto_grafica_everest" class="contacto__formulario">
