@@ -16,8 +16,6 @@ const productos = [
     }
 ];
 
-let productosCards = "";
-
 let contenedorProductos = document.getElementById("contenedor-productos");
 let listaCarrito = document.getElementById("carrito-lista");
 let totalCarrito = document.getElementById("carrito-total")
@@ -59,7 +57,6 @@ function pagarTotalCarrito() {
     }
 }
 
-crearCardsConDatos();
 crearListenersBotonesAgregar();
 botonBorrar.addEventListener("click", borrarCarrito);
 botonPagar.addEventListener("click", pagarTotalCarrito);
