@@ -198,6 +198,24 @@ span{
     font-weight: var(--peso-fuente-subtitulos);
 }
 
+.carrito__titulo{
+    font-family: var(--peso-fuente-titulos);
+    font-weight: var(--peso-fuente-titulos);
+    font-size: 1.8rem;
+}
+
+#carrito-lista{
+    padding: 15px 0px 30px 0px;
+    font-family: var(--fuente-textos-descripcion);
+    font-weight: var(--peso-fuente-textos);
+    font-size: 1.1rem;
+    list-style: none;
+}
+
+#carrito-total{
+    font-size: 1.5rem;
+}
+
 .carrito__total{
     width: 30vw;
     display: flex;
