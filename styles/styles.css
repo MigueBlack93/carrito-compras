@@ -188,8 +188,34 @@ span{
 }
 
 #carrito{
-    display: grid;
+    padding: 40px 10px 40px 10px;
+    background-color: #25ced16c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fuente-textos-descripcion);
+    font-weight: var(--peso-fuente-subtitulos);
+}
 
+.carrito__total{
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carrito__total__botones{
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+}
+
+#carrito-boton-borrar{
+
+}
+
+#carrito-boton-pagar{
+    
 }
 
 #resenas{
@@ -318,7 +344,6 @@ span{
 
     .header__nav__list{
         font-size: 1.25rem;
-        flex-wrap:wrap;
     }
 
     .productos__armado__video{
