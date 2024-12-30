@@ -31,7 +31,6 @@ function crearListenersBotonesAgregar() {
         
         function agregarElemCarrito() {
             const elementoLi = document.createElement("li");
-            const elementoImg = document.createElement("img");
 
             elementoLi.innerText = `Caja ${productos[indice].nombre} a $ ${productos[indice].precio} c/u`;
             listaCarrito.appendChild(elementoLi);
