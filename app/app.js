@@ -16,3 +16,14 @@ const productos[
     }
 ];
 
+let productosCards = "";
+
+
+const contenedorProductos = document.getElementById("contenedor-productos");
+const listaCarrito = document.getElementById("carrito-lista");
+const totalCarrito = document.getElementById("carrito-total")
+const botonBorrar = document.getElementById("carrito-boton-borrar");
+const botonPagar = document.getElementById("carrito-boton-pagar");
+const textoPagarCarrito = document.getElementById("mensajeCarrito");
+let totalAPagar = 0;
+
